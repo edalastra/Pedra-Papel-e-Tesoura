@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+    <title>Pedra Papel e Tesoura</title>
+</head>
+<body>
+    <section class="jogo">
+        <section class="jogador">
+            <span class="nome"><h1>Jogador</h1></span>
+            <div id="cont-jog" class="contador"><span>0</span></div>
+            <ul class="escolhas">
+            <li onclick="escolhaPedra()" class="escolha escolha-jogador pedra">Pedra</li>
+            <li onclick="escolhaPapel()" class="escolha escolha-jogador papel">Papel</li>
+            <li onclick="escolhaTesoura()" class="escolha escolha-jogador tesoura">Tesoura</li>
+            </ul>
+        </section>
+        <section class="computador">
+            <span class="nome"><h1>Compuador</h1></span>
+            <div id="cont-comp" class="contador"><span>0</span></div>
+            <ul class="escolhas">
+                <li class="escolha" id="e1">Pedra</li>
+                <li class="escolha" id="e2">Papel</li>
+                <li class="escolha" id="e3">Tesoura</li>
+            </ul>
+        </section>
+        <section class="resultado">
+            <h1 id="ganhador"></h1>
+        </section>
+    </section>
+        <script src="index.js"></script>
+    <footer>
+        <p>&copy;Elizandro Dalastra</p>
+    </footer>
+
+</body>
+</html>
